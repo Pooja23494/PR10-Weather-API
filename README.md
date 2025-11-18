@@ -1,16 +1,16 @@
-PR-10 Weather API
+# PR-10 Weather API
 
 A simple and responsive weather application built using HTML, CSS, and JavaScript.
 It fetches real-time weather information using a public Weather API and displays details such as temperature, humidity, wind speed, and weather conditions.
 
 --
 
-🔥 Live Demo:
+## 🔥 Live Demo:
 https://pr-10-weather-api-delta.vercel.app
 
 -- 
 
-📌 Features
+## 📌 Features
 
 - 🌦️ Fetches real-time weather data
 - 🔍 Search weather by city name
@@ -21,7 +21,7 @@ https://pr-10-weather-api-delta.vercel.app
 
 --
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
@@ -30,9 +30,15 @@ https://pr-10-weather-api-delta.vercel.app
 
 --
 
-⚙️ How It Works
+## ⚙️ How It Works
 
 - User enters the city name
 - JavaScript sends a request to the weather API
 - API responds with real-time weather details
 - UI updates dynamically to show the results
+
+--
+
+## 📸 Screenshots
+
+![WeatherAPP](<Screenshot 2025-11-18 110329.png>)
