@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("https://myradar.com/static/background-a089d87ba11e1a4c45a8efa960b86092.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.weather-container {
+    width: 100%;
+    max-width: 850px;
+    background: rgba(5, 7, 20, 0.75);
+    color: white;
+    padding: 25px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.city-name {
+    font-size: 26px;
+}
+
+.date-time {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-box input {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    width: 200px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #dcdcdc;
+}
+
+.current-weather {
+    margin-top: 25px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.temp-box h1 {
+    font-size: 70px;
+}
+
+.weather-icon img {
+    width: 120px;
+}
+
+.info p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.forecast-text {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 15px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.card img {
+    width: 50px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .temp-box h1 {
+        font-size: 50px;
+    }
+
+    .weather-icon img {
+        width: 90px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .current-weather {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .temp-box h1 {
+        font-size: 45px;
+    }
+
+    .search-box {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-box input {
+        flex: 1;
+    }
+
+    .city-name {
+        font-size: 22px;
+    }
+
+    .forecast-text {
+        text-align: center;
+    }
+}
